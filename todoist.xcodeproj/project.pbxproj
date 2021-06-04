@@ -14,6 +14,7 @@
 		E9E666F1266A5FDD00159CEF /* todoist.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E9E666EF266A5FDD00159CEF /* todoist.xcdatamodeld */; };
 		E9E666F3266A5FDE00159CEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9E666F2266A5FDE00159CEF /* Assets.xcassets */; };
 		E9E666F6266A5FDE00159CEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9E666F4266A5FDE00159CEF /* LaunchScreen.storyboard */; };
+		E9E66702266A7F5200159CEF /* GoalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E66701266A7F5200159CEF /* GoalCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		E9E666F2266A5FDE00159CEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E9E666F5266A5FDE00159CEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E9E666F7266A5FDE00159CEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9E66701266A7F5200159CEF /* GoalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 		E9E666FD266A624900159CEF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E9E66701266A7F5200159CEF /* GoalCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 				E9E666EB266A5FDD00159CEF /* ToDOIST.swift in Sources */,
 				E9E666E7266A5FDD00159CEF /* AppDelegate.swift in Sources */,
 				E9E666F1266A5FDD00159CEF /* todoist.xcdatamodeld in Sources */,
+				E9E66702266A7F5200159CEF /* GoalCell.swift in Sources */,
 				E9E666E9266A5FDD00159CEF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
