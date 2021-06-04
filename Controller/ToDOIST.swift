@@ -7,13 +7,20 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ToDoIstVC: UIViewController {
+    
+    
+    @IBOutlet var tableView: UITableView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
 
+    @IBAction func addGoalWasPressed(_ sender: Any) {
+    }
+    
 }
 
