@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E91BAAA0266D548400639EBA /* UIView extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91BAA9F266D548400639EBA /* UIView extension.swift */; };
+		E93A7E9B266D0A4400A88331 /* UIViewController+ extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93A7E9A266D0A4400A88331 /* UIViewController+ extension.swift */; };
 		E9E666E7266A5FDD00159CEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E666E6266A5FDD00159CEF /* AppDelegate.swift */; };
 		E9E666E9266A5FDD00159CEF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E666E8266A5FDD00159CEF /* SceneDelegate.swift */; };
 		E9E666EB266A5FDD00159CEF /* ToDOIST.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E666EA266A5FDD00159CEF /* ToDOIST.swift */; };
@@ -15,9 +17,13 @@
 		E9E666F3266A5FDE00159CEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9E666F2266A5FDE00159CEF /* Assets.xcassets */; };
 		E9E666F6266A5FDE00159CEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9E666F4266A5FDE00159CEF /* LaunchScreen.storyboard */; };
 		E9E66702266A7F5200159CEF /* GoalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E66701266A7F5200159CEF /* GoalCell.swift */; };
+		E9E84814266AADA70072279B /* goalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E84813266AADA70072279B /* goalType.swift */; };
+		E9E84816266ACFE80072279B /* CreateGoalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E84815266ACFE80072279B /* CreateGoalVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E91BAA9F266D548400639EBA /* UIView extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView extension.swift"; sourceTree = "<group>"; };
+		E93A7E9A266D0A4400A88331 /* UIViewController+ extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+ extension.swift"; sourceTree = "<group>"; };
 		E9E666E3266A5FDD00159CEF /* todoist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = todoist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9E666E6266A5FDD00159CEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9E666E8266A5FDD00159CEF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +34,8 @@
 		E9E666F5266A5FDE00159CEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E9E666F7266A5FDE00159CEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E9E66701266A7F5200159CEF /* GoalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalCell.swift; sourceTree = "<group>"; };
+		E9E84813266AADA70072279B /* goalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = goalType.swift; sourceTree = "<group>"; };
+		E9E84815266ACFE80072279B /* CreateGoalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGoalVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				E9E66701266A7F5200159CEF /* GoalCell.swift */,
+				E9E84815266ACFE80072279B /* CreateGoalVC.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -94,6 +103,7 @@
 		E9E666FF266A628F00159CEF /* Enums */ = {
 			isa = PBXGroup;
 			children = (
+				E9E84813266AADA70072279B /* goalType.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -101,6 +111,8 @@
 		E9E66700266A629D00159CEF /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				E93A7E9A266D0A4400A88331 /* UIViewController+ extension.swift */,
+				E91BAA9F266D548400639EBA /* UIView extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -178,7 +190,11 @@
 				E9E666EB266A5FDD00159CEF /* ToDOIST.swift in Sources */,
 				E9E666E7266A5FDD00159CEF /* AppDelegate.swift in Sources */,
 				E9E666F1266A5FDD00159CEF /* todoist.xcdatamodeld in Sources */,
+				E91BAAA0266D548400639EBA /* UIView extension.swift in Sources */,
+				E93A7E9B266D0A4400A88331 /* UIViewController+ extension.swift in Sources */,
 				E9E66702266A7F5200159CEF /* GoalCell.swift in Sources */,
+				E9E84816266ACFE80072279B /* CreateGoalVC.swift in Sources */,
+				E9E84814266AADA70072279B /* goalType.swift in Sources */,
 				E9E666E9266A5FDD00159CEF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

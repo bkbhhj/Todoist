@@ -25,7 +25,9 @@ class ToDoIstVC: UIViewController, UITableViewDelegate {
 
 
     @IBAction func addGoalWasPressed(_ sender: Any) {
+        guard let createGoalVC = storyboard?.instantiateViewController(withIdentifier: "CreateGoalVC") else {return}
         
+presentDetail(viewControllerToPresent: createGoalVC)
     }
     
     
@@ -45,7 +47,7 @@ extension ToDoIstVC: UITabBarDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "goalCell") as? GoalCell else { return UITableViewCell() }
         
-        cell.configureCell(description: "Ear salad", type: "Short time", goalprogressAmount: 2)
+        cell.configureCell(description: "Eat salad evening", type: .shortTerm, goalprogressAmount: 2)
         return cell
     }
 }
