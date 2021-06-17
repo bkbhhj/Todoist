@@ -19,6 +19,7 @@
 		E9E66702266A7F5200159CEF /* GoalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E66701266A7F5200159CEF /* GoalCell.swift */; };
 		E9E84814266AADA70072279B /* goalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E84813266AADA70072279B /* goalType.swift */; };
 		E9E84816266ACFE80072279B /* CreateGoalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E84815266ACFE80072279B /* CreateGoalVC.swift */; };
+		E9F4171E267BCA1A0099E12C /* extension + button.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F4171D267BCA1A0099E12C /* extension + button.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		E9E66701266A7F5200159CEF /* GoalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalCell.swift; sourceTree = "<group>"; };
 		E9E84813266AADA70072279B /* goalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = goalType.swift; sourceTree = "<group>"; };
 		E9E84815266ACFE80072279B /* CreateGoalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGoalVC.swift; sourceTree = "<group>"; };
+		E9F4171D267BCA1A0099E12C /* extension + button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extension + button.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 			children = (
 				E93A7E9A266D0A4400A88331 /* UIViewController+ extension.swift */,
 				E91BAA9F266D548400639EBA /* UIView extension.swift */,
+				E9F4171D267BCA1A0099E12C /* extension + button.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 				E93A7E9B266D0A4400A88331 /* UIViewController+ extension.swift in Sources */,
 				E9E66702266A7F5200159CEF /* GoalCell.swift in Sources */,
 				E9E84816266ACFE80072279B /* CreateGoalVC.swift in Sources */,
+				E9F4171E267BCA1A0099E12C /* extension + button.swift in Sources */,
 				E9E84814266AADA70072279B /* goalType.swift in Sources */,
 				E9E666E9266A5FDD00159CEF /* SceneDelegate.swift in Sources */,
 			);
