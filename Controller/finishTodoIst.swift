@@ -6,6 +6,9 @@
 //
 
 import UIKit
+import CoreData
+
+let appDelegate = UIApplication.shared.delegate as? AppDelegate
 
 class finishTodoIst: UIViewController, UITextFieldDelegate {
 
@@ -27,7 +30,42 @@ class finishTodoIst: UIViewController, UITextFieldDelegate {
     
 
     @IBAction func createGoalButton(_ sender: Any) {
-        // Pass data
+       
+        if scoreTextField.text != "" {
+            self.save {
+                (complete) in
+                if complete {
+                    dismiss(animated: true, completion: nil)
+                }
+            }
+        }
+        
     }
     
+    @IBAction func backButtonPressed(_ sender: Any) {
+        dissmissdetail()
+    }
+    
+    func save(completion: (_ finished: Bool) -> ()) {
+        guard let managedContext = appDelegate?.persistentContainer.viewContext else {return}
+        let goal = Goals(context: managedContext)
+        
+        goal.goalDeskription = goalDescription
+        goal.goalType = goalType.rawValue
+        goal.goalprogress = Int32(scoreTextField.text!)!
+        goal.goalProgress = Int32(0)
+        
+        do{
+           try  managedContext.save()
+            print("Ваши данные успешно сохранены!")
+            completion(true)
+
+        }
+        catch {
+            debugPrint("Ошибка: \(error.localizedDescription)")
+            completion(false)
+
+        }
+     
+    }
 }
