@@ -78,33 +78,13 @@ extension ToDoIstVC: UITabBarDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
         return UITableViewCell.EditingStyle.none
     }
-    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
-        let deleteAction = UITableViewRowAction(style: .destructive, title: "Delete") { (rowAction, indexPath) in
-            self.removeGoal(atIndexPath: indexPath)
-            self.fetchDataObjects()
-            tableView.deleteRows(at: [indexPath], with: .automatic)
-        }
-        deleteAction.backgroundColor = #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)
-        return [deleteAction]
-    }
+
 }
  
 
 
 extension ToDoIstVC {
-    func removeGoal(atIndexPath indexPath: IndexPath) {
-        guard let managedContext = appDelegate?.persistentContainer.viewContext else {return}
-        
-        managedContext.delete(goals[indexPath.row])
-        
-        do {
-            try managedContext.save()
-            print("Успешно")
- 
-        } catch {
-            debugPrint("Ошибка - \(error)")
-        }
-    }
+
     
     func fetch(completion: (_ complete: Bool) -> ()) {
         guard let managedContext = appDelegate?.persistentContainer.viewContext else {return}
